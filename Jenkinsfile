@@ -26,7 +26,7 @@ pipeline {
                     id: "jfrog",
                     url: "http://jfrog.ijarah.loc:8082/ui/admin/artifactory",
                     credentialsId: "jfrog"
-		    bypassProxy: true,
+		    bypassProxy: true
 
                 )
 
