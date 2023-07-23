@@ -11,8 +11,8 @@ pipeline {
 	  //Build stage
 	stage ('Build')  {
 	    steps {
-            bat "gradle tasks"
-            bat "gradle build"
+            sh "gradle tasks"
+            sh "gradle build"
           }
             
    }
