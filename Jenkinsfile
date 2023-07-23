@@ -27,7 +27,6 @@ pipeline {
                     url: "http://jfrog.ijarah.loc:8082/ui/admin/artifactory",
                     credentialsId: "jfrog"
 		    bypassProxy: true
-
                 )
 
                 rtGradleDeployer (
