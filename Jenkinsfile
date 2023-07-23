@@ -48,7 +48,7 @@ pipeline {
                 rtGradleRun (
                     //tool: "gradle", // Tool name from Jenkins configuration
                     //pom: 'app/pom.xml',
-                    goals: 'gradle install',
+                    //goals: 'gradle install',
                     deployerId: "GRADLE_DEPLOYER",
                     resolverId: "GRADLE_RESOLVER"
                 )
