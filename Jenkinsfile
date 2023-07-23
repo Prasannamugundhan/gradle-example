@@ -30,15 +30,15 @@ pipeline {
                 rtGradleDeployer (
                     id: "GRADLE_DEPLOYER",
                     serverId: "jfrog",
-                    Repo: "android_artifact-libs-release-local",
-                    Repo: "android_artifact-snapshot-local"
+                    repo: "android_artifact-libs-release-local",
+                    repo: "android_artifact-snapshot-local"
                 )
 
                 rtGradleResolver (
                     id: "GRADLE_RESOLVER",
                     serverId: "jfrog",
-                    Repo: "default-gradle-virtual",
-                    Repo: "default-gradle-virtual"
+                    repo: "default-gradle-virtual",
+                    repo: "default-gradle-virtual"
                 )
             }
     }
