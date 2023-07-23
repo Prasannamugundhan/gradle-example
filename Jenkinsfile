@@ -30,15 +30,15 @@ pipeline {
                 rtGradleDeployer (
                     id: "GRADLE_DEPLOYER",
                     serverId: "jfrog",
-                    releaseRepo: "android_artifact-libs-release-local",
-                    snapshotRepo: "android_artifact-snapshot-local"
+                    Repo: "android_artifact-libs-release-local",
+                    Repo: "android_artifact-snapshot-local"
                 )
 
                 rtGradleResolver (
                     id: "GRADLE_RESOLVER",
                     serverId: "jfrog",
-                    releaseRepo: "default-gradle-virtual",
-                    snapshotRepo: "default-gradle-virtual"
+                    Repo: "default-gradle-virtual",
+                    Repo: "default-gradle-virtual"
                 )
             }
     }
@@ -46,7 +46,7 @@ pipeline {
     stage ('Deploy Artifacts') {
             steps {
                 rtGradleRun (
-                    tool: "gradle", // Tool name from Jenkins configuration
+                    //tool: "gradle", // Tool name from Jenkins configuration
                     //pom: 'app/pom.xml',
                     goals: 'gradle install',
                     deployerId: "GRADLE_DEPLOYER",
