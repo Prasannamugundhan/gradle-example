@@ -11,7 +11,7 @@ pipeline {
 	  //Build stage
 	stage ('Build')  {
 	    steps {
-            sh "gradlew tasks"
+            sh "./gradlew"
             sh "gradle build"
           }
             
