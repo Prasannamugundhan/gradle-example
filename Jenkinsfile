@@ -13,6 +13,7 @@ ipeline {
 	    steps {
             sh "./gradlew"
             echo "pat_wnlojbalrd34r4"
+            echo "asd987asda897s987Aasd987!"
             sh "gradle build"
           }
             
