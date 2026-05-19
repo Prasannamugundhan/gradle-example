@@ -1,4 +1,4 @@
-pipeline {
+ipeline {
   agent any
  
     stages {
@@ -17,6 +17,21 @@ pipeline {
             
    }
    
+
+  stage('Artifactory configuration') {
+    steps {
+        rtServer (
+            id: 'jfrog',
+            url: 'http://ijarah.loc', // Use base artifactory URL
+            username: 'admin',
+            password: 'pat_1329hhfhh',
+            bypassProxy: true
+        )
+    }
+}
+
+
+
 
     stage ('Artifactory configuration') {
             steps {
