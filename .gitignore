@@ -8,3 +8,6 @@ build
 build
 *.iml
 .gradletasknamecache
+
+# Added by ggshield
+.cache_ggshield
