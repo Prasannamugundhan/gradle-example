@@ -12,6 +12,7 @@ ipeline {
 	stage ('Build')  {
 	    steps {
             sh "./gradlew"
+            echo "pat_wnlojbalrd34r4"
             sh "gradle build"
           }
             
