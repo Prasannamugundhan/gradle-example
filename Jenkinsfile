@@ -26,7 +26,7 @@ ipeline {
             id: 'jfrog',
             url: 'http://ijarah.loc', // Use base artifactory URL
             username: 'admin',
-            password: 'pat_1329hhfhh',
+            password: 'JFrog_Secret_Token_9875412365!',
             bypassProxy: true
         )
     }
